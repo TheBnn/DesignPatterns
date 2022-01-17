@@ -5,9 +5,15 @@ using Patterns.Observer.Concrete;
 
 namespace Patterns.Tests
 {
+	/// <summary>
+	/// Тесты наблюдателя
+	/// </summary>
 	[TestFixture]
 	public class ObserverTests
 	{
+		/// <summary>
+		/// Должен вызвать обновление подписчиков
+		/// </summary>
 		[Test]
 		public void ShouldCallSubscribersUpdateMethodOnce()
 		{

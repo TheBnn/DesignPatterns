@@ -5,9 +5,15 @@ using Patterns.Decorator.Concrete;
 
 namespace Patterns.Tests
 {
+	/// <summary>
+	/// Тестирование декоратора
+	/// </summary>
 	[TestFixture]
 	public class DecoratorTests
 	{
+		/// <summary>
+		/// Должен вернуть стоимость пиццы
+		/// </summary>
 		[Test]
 		public void ShouldIncreaseCostWithAddons()
 		{
@@ -19,6 +25,9 @@ namespace Patterns.Tests
 			Assert.AreEqual(14, pizzaWithOlivesHamAndSalami.GetCost());
 		}
 
+		/// <summary>
+		/// Должен вернуть стоимость пиццы
+		/// </summary>
 		[Test]
 		public void ShouldIncreaseCostWithAddonsAndDiscount()
 		{
@@ -31,6 +40,9 @@ namespace Patterns.Tests
 			Assert.AreEqual(13.65, pizzaWithAddonsAndDiscount.GetCost());
 		}
 
+		/// <summary>
+		/// Должен вернуть валидную стоимость пиццы
+		/// </summary>
 		[Test]
 		public void GetPizzaCost()
 		{

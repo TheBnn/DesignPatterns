@@ -16,7 +16,7 @@ namespace Command.Receivers
 		private string _room;
 		private int _speed;
 
-		public CeilingFan(string room)
+ 		public CeilingFan(string room)
 		{
 			if (String.IsNullOrEmpty(room))
 			{
